@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -123,18 +123,14 @@
 <polygon width="0.127" layer="41">
 <vertex x="14.986" y="40.64"/>
 <vertex x="14.986" y="34.798"/>
-<vertex x="6.858" y="34.798"/>
-<vertex x="3.81" y="37.846"/>
-<vertex x="0" y="37.846"/>
+<vertex x="0" y="34.798"/>
 <vertex x="0" y="40.64"/>
 </polygon>
 <polygon width="0.127" layer="42">
 <vertex x="0" y="40.64"/>
 <vertex x="14.986" y="40.64"/>
 <vertex x="14.986" y="34.798"/>
-<vertex x="6.858" y="34.798"/>
-<vertex x="3.81" y="37.846"/>
-<vertex x="0" y="37.846"/>
+<vertex x="0" y="34.798"/>
 </polygon>
 <text x="27.94" y="0.7112" size="0.8128" layer="21" font="vector" ratio="15" align="center">GND</text>
 <text x="25.4" y="4.3688" size="0.8128" layer="21" font="vector" ratio="15" align="center">EN</text>
@@ -145,6 +141,17 @@
 <text x="12.7" y="0.7112" size="0.8128" layer="21" font="vector" ratio="15" align="center">MOSI</text>
 <text x="10.16" y="4.3688" size="0.8128" layer="21" font="vector" ratio="15" align="center">3.3V</text>
 <text x="7.62" y="0.7112" size="0.8128" layer="21" font="vector" ratio="15" align="center">VCC</text>
+<text x="15.24" y="32.0548" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">CC3000</text>
+<text x="14.986" y="30.5816" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">WiFi Breakout</text>
+<text x="7.62" y="0.7112" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center">VCC</text>
+<text x="10.16" y="4.3688" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center">3.3V</text>
+<text x="12.7" y="0.7112" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center">MOSI</text>
+<text x="15.24" y="4.3688" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center">MISO</text>
+<text x="17.78" y="0.7112" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center">CS</text>
+<text x="20.32" y="4.3688" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center">INT</text>
+<text x="22.86" y="0.7112" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center">SCK</text>
+<text x="25.4" y="4.3688" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center">EN</text>
+<text x="27.94" y="0.7112" size="0.8128" layer="22" font="vector" ratio="15" rot="MR0" align="center">GND</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -1451,7 +1458,7 @@ design rules under a new name.</description>
 <element name="FID2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="1.27" y="6.35"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="3.81" y="7.62"/>
 <element name="LOGO2" library="SparkFun-Aesthetics" package="SFE-NEW-WEBLOGO" value="LOGO-SFENEW" x="27.686" y="8.636" rot="MR0"/>
-<element name="LOGO3" library="SparkFun-Aesthetics" package="SFE-LOGO-FLAME" value="LOGO-SFESK" x="3.175" y="26.67"/>
+<element name="LOGO3" library="SparkFun-Aesthetics" package="SFE-LOGO-FLAME" value="LOGO-SFESK" x="2.667" y="26.67"/>
 <element name="JP2" library="SparkFun-Connectors" package="1X09" value="M09" x="27.94" y="2.54" rot="R180"/>
 <element name="STANDOFF1" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="33.02" y="33.02" rot="R90"/>
 <element name="STANDOFF2" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="2.54" y="33.02" rot="R90"/>
@@ -1483,7 +1490,6 @@ design rules under a new name.</description>
 <via x="11.43" y="22.86" extent="1-16" drill="0.508"/>
 <wire x1="3.81" y1="8.89" x2="3.81" y2="16.256" width="1.016" layer="16"/>
 <wire x1="3.81" y1="16.256" x2="3.81" y2="22.098" width="1.016" layer="16"/>
-<wire x1="3.81" y1="22.098" x2="4.572" y2="22.86" width="1.016" layer="16"/>
 <via x="3.81" y="16.256" extent="1-16" drill="0.508"/>
 <wire x1="13.97" y1="22.99" x2="13.97" y2="24.638" width="0.508" layer="1"/>
 <wire x1="14.87" y1="26.67" x2="14.87" y2="25.538" width="0.508" layer="1"/>
@@ -1506,8 +1512,8 @@ design rules under a new name.</description>
 <contactref element="U1" pad="4"/>
 <polygon width="0.254" layer="1" isolate="0.3048">
 <vertex x="0" y="19.05"/>
-<vertex x="0" y="27.94"/>
-<vertex x="12.7" y="27.94"/>
+<vertex x="0" y="27.686"/>
+<vertex x="12.7" y="27.686"/>
 <vertex x="12.7" y="19.05"/>
 </polygon>
 <wire x1="8.04" y1="17.78" x2="6.858" y2="17.78" width="0.254" layer="1"/>
@@ -1518,15 +1524,15 @@ design rules under a new name.</description>
 <wire x1="2.96" y1="19.216" x2="3.048" y2="19.304" width="0.254" layer="1"/>
 <wire x1="13.97" y1="24.638" x2="12.446" y2="24.638" width="0.508" layer="1"/>
 <polygon width="0.254" layer="16" isolate="0.3048">
-<vertex x="0" y="19.05"/>
+<vertex x="2.54" y="19.05"/>
 <vertex x="12.7" y="19.05"/>
-<vertex x="12.7" y="27.94"/>
-<vertex x="0" y="27.94"/>
+<vertex x="12.7" y="27.686"/>
+<vertex x="4.191" y="27.686"/>
+<vertex x="2.54" y="26.035"/>
 </polygon>
 <via x="12.192" y="19.558" extent="1-16" drill="0.508"/>
 <via x="4.064" y="25.4508" extent="1-16" drill="0.508"/>
 <via x="4.064" y="20.2692" extent="1-16" drill="0.508"/>
-<via x="1.27" y="27.178" extent="1-16" drill="0.508"/>
 <via x="5.588" y="20.32" extent="1-16" drill="0.508"/>
 <via x="7.112" y="20.32" extent="1-16" drill="0.508"/>
 <via x="5.588" y="22.86" extent="1-16" drill="0.508"/>
@@ -1637,11 +1643,7 @@ design rules under a new name.</description>
 <via x="24.638" y="37.592" extent="1-16" drill="0.381"/>
 <via x="29.337" y="32.639" extent="1-16" drill="0.381"/>
 <via x="29.337" y="33.909" extent="1-16" drill="0.381"/>
-<via x="6.096" y="34.29" extent="1-16" drill="0.381"/>
-<via x="4.826" y="35.56" extent="1-16" drill="0.381"/>
-<via x="3.556" y="36.83" extent="1-16" drill="0.381"/>
-<via x="2.286" y="36.83" extent="1-16" drill="0.381"/>
-<via x="1.016" y="36.83" extent="1-16" drill="0.381"/>
+<via x="6.096" y="33.782" extent="1-16" drill="0.381"/>
 <via x="16.002" y="34.544" extent="1-16" drill="0.381"/>
 <polygon width="0.254" layer="1" isolate="0.3048" rank="6">
 <vertex x="0" y="0"/>
@@ -1700,7 +1702,7 @@ design rules under a new name.</description>
 <via x="29.718" y="1.016" extent="1-16" drill="0.508"/>
 <via x="34.036" y="6.096" extent="1-16" drill="0.508"/>
 <via x="11.43" y="8.128" extent="1-16" drill="0.508"/>
-<via x="6.604" y="32.004" extent="1-16" drill="0.508"/>
+<via x="5.334" y="28.956" extent="1-16" drill="0.508"/>
 <via x="23.876" y="4.572" extent="1-16" drill="0.508"/>
 <via x="21.844" y="4.572" extent="1-16" drill="0.508"/>
 <via x="34.29" y="39.37" extent="1-16" drill="0.508"/>
