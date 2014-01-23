@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -20460,9 +20460,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <attribute name="COEFF" value="C0G"/>
 <attribute name="TOL" value="5%"/>
 </part>
-<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603">
-<attribute name="PLACE" value="DNP"/>
-</part>
+<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="DNP"/>
 <part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="2.2nH"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -20557,8 +20555,9 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <attribute name="NAME" x="149.86" y="170.307" size="1.778" layer="95"/>
 <attribute name="VALUE" x="154.94" y="165.227" size="1.778" layer="96"/>
 </instance>
-<instance part="L1" gate="G$1" x="116.84" y="157.48">
-<attribute name="PLACE" x="119.38" y="160.02" size="1.778" layer="96"/>
+<instance part="L1" gate="G$1" x="116.84" y="157.48" smashed="yes">
+<attribute name="NAME" x="119.38" y="162.56" size="1.778" layer="95"/>
+<attribute name="VALUE" x="119.38" y="160.02" size="1.778" layer="96"/>
 </instance>
 <instance part="L2" gate="G$1" x="139.7" y="157.48" smashed="yes">
 <attribute name="NAME" x="142.24" y="162.56" size="1.778" layer="95"/>
@@ -20598,8 +20597,8 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <instance part="SUPPLY8" gate="G$1" x="71.12" y="40.64"/>
 <instance part="FID1" gate="G$1" x="243.84" y="33.02"/>
 <instance part="FID2" gate="G$1" x="238.76" y="33.02"/>
-<instance part="LOGO1" gate="G$1" x="134.62" y="12.7"/>
-<instance part="LOGO3" gate="G$1" x="231.14" y="25.4"/>
+<instance part="LOGO1" gate="G$1" x="132.08" y="10.16"/>
+<instance part="LOGO3" gate="G$1" x="241.3" y="25.4"/>
 <instance part="JP2" gate="G$1" x="35.56" y="76.2" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="35.56" y="91.44" size="1.778" layer="96" rot="MR180"/>
 <attribute name="NAME" x="35.56" y="62.23" size="1.778" layer="95" rot="MR180"/>
