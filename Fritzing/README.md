@@ -1,0 +1,2 @@
+* Fritzing diagram showing the CC3000 WiFi Breakout Board connected to an [Arduino Uno](https://www.sparkfun.com/products/11021)
+* The subfolder contains the source files for Fritzing diagrams for the CC3000 Breakout Board.
