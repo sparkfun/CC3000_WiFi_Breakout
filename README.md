@@ -4,7 +4,7 @@ CC3000_WiFi_Breakout
 [![TI CC3000 WiFi Breakout Board](https://cdn.sparkfun.com/assets/parts/8/6/8/5/12072-01.jpg)  
 *CC3000 WiFi Breakout Board (WRL-12072)*](https://www.sparkfun.com/products/12072)
 
-WiFi breakout board for the [TI](http://www.ti.com/) CC3000 module. The datasheet can be found [here](http://www.ti.com/lit/ds/symlink/cc3000.pdf).
+WiFi breakout board for the [TI CC3000 module](http://www.ti.com/product/cc3000). The datasheet can be found [here](http://www.ti.com/lit/ds/symlink/cc3000.pdf).
 
 Arduino library and examples can be found in the [SFE_CC3000_Library](https://github.com/sparkfun/SFE_CC3000_Library).
 
